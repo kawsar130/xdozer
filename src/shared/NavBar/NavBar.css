@@ -1,0 +1,8 @@
+.link {
+    color: gray;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}

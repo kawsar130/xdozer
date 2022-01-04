@@ -1,0 +1,11 @@
+.service-col {
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.service-col:hover {
+    background-color: #eeeeee;
+    background-image: url("https://i.ibb.co/pZFCcgQ/service-bg.jpg");
+    transform: scale(1.05);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

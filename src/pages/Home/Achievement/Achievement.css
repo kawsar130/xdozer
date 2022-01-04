@@ -1,0 +1,12 @@
+.achievement-container {
+    padding: 10vw 0 10vw 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    padding: 20px;
+}

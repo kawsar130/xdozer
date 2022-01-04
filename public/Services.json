@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Equipment Rent",
+        "detail": "Xdozer works with both customers and vendors in the same marketplace, we maintain a network of most of the vendors in the country.",
+        "img": "https://i.ibb.co/18b094n/heavy-equipment.png"
+    },
+    {
+        "name": "Used Equipment Market",
+        "detail": "Xdozer is offering a great place to buy and sell used equipment with registered potential customers and equipment vendors.",
+        "img": "https://i.ibb.co/k5n8rTY/used-equipment.png"
+    },
+    {
+        "name": "Spare Parts Supply",
+        "detail": "Xdozer made a comprehensive network with some big authentic spare parts providers who will benefit you during your equipment breakdown.",
+        "img": "https://i.ibb.co/zsB8Tts/spare-parts.png"
+    },
+    {
+        "name": "Site Construction",
+        "detail": "Xdozer works with Industrial construction sites involve large-scale projects with a high degree of complexity.",
+        "img": "https://i.ibb.co/0KxxwDQ/construction.png"
+    },
+    {
+        "name": "Material Supply",
+        "detail": "We have made this platform not only for equipment renting but also for providing your required spare parts that is essential after break-down",
+        "img": "https://i.ibb.co/dtPW4dK/maintenance.png"
+    },
+    {
+        "name": "Consultancy",
+        "detail": "We are dedicated to provide you consultancy about your construction site and equipment renting that can help you to make the perfect decision.",
+        "img": "https://i.ibb.co/1LcpFkT/automation.png"
+    }
+]
