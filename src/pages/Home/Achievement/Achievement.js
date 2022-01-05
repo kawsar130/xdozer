@@ -24,7 +24,6 @@ const Achievement = () => {
                             <Button
                                 className="mt-3 ms-0 text-white fw-bold btn-grad"
                                 variant="warning"
-                                size="md"
                             >
                                 Learn More!
                             </Button>
@@ -41,7 +40,7 @@ const Achievement = () => {
                                             width="70px"
                                         />
                                     </div>
-                                    <div className="px-4 text-start">
+                                    <div className="px-3 text-start">
                                         <CountUp
                                             className="fs-2 fw-bold"
                                             start={0}
@@ -59,7 +58,7 @@ const Achievement = () => {
                                             width="70px"
                                         />
                                     </div>
-                                    <div className="px-4 text-start">
+                                    <div className="px-3 text-start">
                                         <CountUp
                                             className="fs-2 fw-bold"
                                             start={0}
@@ -79,7 +78,7 @@ const Achievement = () => {
                                             width="70px"
                                         />
                                     </div>
-                                    <div className="px-4 text-start">
+                                    <div className="px-3 text-start">
                                         <CountUp
                                             className="fs-2 fw-bold"
                                             start={0}
@@ -97,7 +96,7 @@ const Achievement = () => {
                                             width="70px"
                                         />
                                     </div>
-                                    <div className="px-4 text-start">
+                                    <div className="px-3 text-start">
                                         <CountUp
                                             className="fs-2 fw-bold"
                                             start={0}
