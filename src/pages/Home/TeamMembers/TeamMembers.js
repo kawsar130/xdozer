@@ -28,7 +28,7 @@ const TeamMembers = () => {
                     ) : (
                         <div className="mt-5">
                             <Container>
-                                <Row>
+                                <Row className="gx-1">
                                     {members.map((mem) => (
                                         <Member mem={mem}></Member>
                                     ))}
