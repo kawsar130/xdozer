@@ -16,14 +16,16 @@ const NavBar = () => {
             className="py-2"
         >
             <Container>
-                <Navbar.Brand href="#home">
-                    <img
-                        src={logo}
-                        width="auto"
-                        height="30"
-                        className="d-inline-block align-top"
-                        alt="XDozer logo"
-                    />
+                <Navbar.Brand>
+                    <NavLink to="/">
+                        <img
+                            src={logo}
+                            width="auto"
+                            height="30"
+                            className="d-inline-block align-top"
+                            alt="XDozer logo"
+                        />
+                    </NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

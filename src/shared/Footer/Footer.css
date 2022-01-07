@@ -1,0 +1,19 @@
+.footer-container {
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(43, 58, 103, 1) 0%,
+        rgba(43, 58, 103, 1) 90%
+    );
+    color: white;
+    padding: 140px 0 100px;
+}
+
+.footer-title {
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    width: 60%;
+}
+
+.footer-icon-text {
+    display: flex;
+}
