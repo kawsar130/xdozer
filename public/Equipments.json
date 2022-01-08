@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Volvo ECR58DL Compact",
+        "brand": "Volvo",
+        "power": "48 HP",
+        "weight": "5700 KG",
+        "category": "Excavator",
+        "description": "Take a closer look! The Volvo ECR58DL mini digger delivers high performance, excellent control and low fuel consumption. Perfect for multiple applications including road construction, utilities and landscaping.",
+        "img": "https://i.ibb.co/PhSKtN1/volvo-excavator-ccexpress.png"
+    },
+    {
+        "id": 2,
+        "name": "Caterpillar 205",
+        "brand": "Caterpillar",
+        "power": "71 HP",
+        "weight": "13135 KG",
+        "category": "Excavator",
+        "description": "he Cat 205 excavator comes standard with a load sensing hydraulic system, moving undercarriage, and a new single main pump. It also has increased lift capacity, digging depth and reach, created by higher stick and bucket forces.",
+        "img": "https://i.ibb.co/YZfSLzD/cat-excavator.png"
+    },
+    {
+        "id": 3,
+        "name": "Caterpillar Dozers D5",
+        "brand": "Caterpillar",
+        "power": "170 HP",
+        "weight": "19170 KG",
+        "category": "BullDozer",
+        "description": "The new Cat D5 succeeds the renowned D6N with superior performance, a fully automatic transmission and the broadest choice of technology features to help you get the most from your dozer. Nimble and responsive, it has power for dozing and finesse for grading.",
+        "img": "https://i.ibb.co/W3CmCXC/dozer-d5-ccexpress.png"
+    },
+    {
+        "id": 4,
+        "name": "Mitsubishi BD2F",
+        "brand": "Mitsubishi",
+        "power": "40 HP",
+        "weight": "4050 KG",
+        "category": "Dozer",
+        "description": "Mitsubishi BD2F Tracked Dozer, 40 Hp, C S4E2 Diesel Water-Cooled Engine, (1) Exhausts, Power Shift Transmission, 4WD, Tracked, Hydraulic Brakes, 12 inch Tracks, Canopy, Pin Hitch, 7 feet Width, Tilt/Angle Blade, Vinyl Seat, (3) Forward Gears And (3) Reverse, Operating Weight 8223 Lbs, Track Gauge 4 feet, SN: 1B500184",
+        "img": "https://i.ibb.co/KVf53HP/mitsubishi-dozer-ccexpress.png"
+    },
+    {
+        "id": 5,
+        "name": "Komatsu WA200-8",
+        "brand": "Komatsu",
+        "power": "95.2 HP",
+        "weight": "7140 KG",
+        "category": "Wheel Loader",
+        "description": "The Komatsu WA200-8 wheel loader is an all-round utility performer for most worksites, with an attachment-friendly quick coupler and an EU Stage IV engine.",
+        "img": "https://i.ibb.co/whzrswV/komatsu-wa200.png"
+    },
+    {
+        "id": 6,
+        "name": "Komatsu WA1200-6",
+        "brand": "Komatsu",
+        "power": "1411 HP",
+        "weight": "250 Ton",
+        "category": "Wheel Loader",
+        "description": "From the low vibration cab the operator uses his advanced joystick control and modulated clutch drive system to maneuver in tight areas to load trucks up to 320 ton capacity. High stability and breakout force give the operator the confidence he needs to keep up with the production demands of today’s mines.",
+        "img": "https://i.ibb.co/8BgkzWq/komatsu-wa1200-6.png"
+    },
+    {
+        "id": 7,
+        "name": "Komatsu HM300-5",
+        "brand": "Komatsu",
+        "power": "248 HP",
+        "weight": "28 Ton",
+        "category": "Dump Truck",
+        "description": "With a powerful Komatsu EU Stage V engine, the advanced Komatsu Traction Control System, selectable working modes for on-demand performance adjustments, a robust exterior, and state-of-the-art solutions for its suspension and retarder, the HM300-5 is a perfect choice for any jobsite, in any conditions.",
+        "img": "https://i.ibb.co/tpQ1w5Q/komatsu-hm300-5.png"
+    },
+    {
+        "id": 8,
+        "name": "Komatsu HM400-5",
+        "brand": "Komatsu",
+        "power": "353 HP",
+        "weight": "40 Ton",
+        "category": "Dump Truck",
+        "description": "With a powerful Komatsu EU Stage V engine, the advanced Komatsu Traction Control System, selectable working modes for on demand performance adjustments, a robust exterior, and state-of-theart solutions for its suspension and retarder, the HM400-5 is a perfect choice for any jobsite, in any conditions.",
+        "img": "https://i.ibb.co/6g80NTB/komatsu-hm400-5-ccexpress.png"
+    },
+    {
+        "id": 9,
+        "name": "Caterpillar AP355F Paver",
+        "brand": "Caterpillar",
+        "power": "74.8 HP",
+        "weight": "10500 KG",
+        "category": "Track Asphalt Paver",
+        "description": "The AP355F paver combines excellent styling with technology that exemplifies comfort and productivity. Numerous technological enhancements help contractors navigate around the twists and turns of urban environments and mountain roads.",
+        "img": "https://i.ibb.co/S0ZL32k/caterpillar-paver-ccexpress.png"
+    },
+    {
+        "id": 10,
+        "name": "Caterpillar Drills MD6250",
+        "brand": "Caterpillar",
+        "power": "826 HP",
+        "weight": "54 Ton KG",
+        "category": "Driller",
+        "description": "The Cat® MD6250 rotary drill is built from the ground up with 100 percent Cat parts to help you get the most out of your operation. With built-in autonomous features and the option to integrate Cat MineStar technologies, the MD6250 offers accurate, reliable performance in any hard rock drilling application.",
+        "img": "https://i.ibb.co/42Bb3jb/caterpillar-drills-ccexpress.png"
+    },
+    {
+        "id": 11,
+        "name": "Caterpillar CW16 Roller",
+        "brand": "Caterpillar",
+        "power": "100.5 HP",
+        "weight": "11 Ton KG",
+        "category": "Pneumatic Roller",
+        "description": "The Cat® CW16 9-wheel pneumatic roller offers an operating weight range of 5200 kg to 15 000 kg (11,484 lb - 33,069 lb) for excellent versatility and performance. Equipped with an efficient Cat engine, this machine delivers smooth, reliable performance on grades and soft base materials.",
+        "img": "https://i.ibb.co/cwyHgsd/caterpillar-roller-ccexpress.png"
+    },
+    {
+        "id": 12,
+        "name": "Caterpillar Draglines 8200",
+        "brand": "Caterpillar",
+        "power": "450 HP",
+        "weight": "250 Ton",
+        "category": "Dragline",
+        "description": "Delivering extremely high levels of overburden removal productivity at a low cost per tonne (ton), the Cat 8200 model dragline offers all of the innovative technology of our flagship model - the Cat 8750 - but on a mid-range size scale. Along with a lower initial capital outlay compared to larger draglines, the 8200's unique combination of technology, size, and long operating life ensures the low total cost of ownership you need for a strong return on your investment.",
+        "img": "https://i.ibb.co/JmKbM9m/dragline.png"
+    }
+]

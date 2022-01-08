@@ -9,6 +9,9 @@ import NotFound from "./pages/NotFound/NotFound";
 import Login from "./pages/Login/Login/Login";
 import AuthProvider from "./context/AuthProvider/AuthProvider";
 import Register from "./pages/Login/Register/Register";
+import EquipmentRent from "./pages/EquipmentRent/EquipmentRent";
+import SingleEquipment from "./pages/SingleEquipment/SingleEquipment";
+import EquipmentDetail from "./pages/EquipmentRent/EquipmentDetail/EquipmentDetail";
 
 function App() {
     return (
@@ -20,6 +23,11 @@ function App() {
                     <Route path="/services" element={<AllServices />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
+                    <Route path="/equipmentRent" element={<EquipmentRent />} />
+                    <Route
+                        path={`/equipmentRent/:id`}
+                        element={<EquipmentDetail />}
+                    />
                     <Route exact path="/" element={<Home />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
