@@ -1,15 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Spinner } from "react-bootstrap";
+import useAuth from "../../hooks/useAuth";
 import SingleEquipment from "../SingleEquipment/SingleEquipment";
 
 const EquipmentRent = () => {
+    const { user } = useAuth();
     const [equipments, setEquipments] = useState([]);
 
     useEffect(() => {
-        fetch("Equipments.json")
+        fetch("http://localhost:5000/equipmentRent")
             .then((res) => res.json())
             .then((data) => setEquipments(data));
     }, []);
+
+    const detectEquipmentId = (_id) => {
+        const clientDetail = {
+            clientEmail: user.email,
+            equipmentId: _id
+        };
+        console.log(clientDetail);
+
+        // Send to Cart in Server
+        fetch("http://localhost:5000/listed", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(clientDetail)
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.result.insertedId) {
+                }
+            });
+    };
 
     return (
         <div className="py-5">
@@ -28,6 +52,7 @@ const EquipmentRent = () => {
                                 {equipments.map((equipment) => (
                                     <SingleEquipment
                                         equipment={equipment}
+                                        detectEquipmentId={detectEquipmentId}
                                     ></SingleEquipment>
                                 ))}
                             </Row>

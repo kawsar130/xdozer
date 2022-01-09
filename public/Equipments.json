@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Volvo ECR58DL Compact",
         "brand": "Volvo",
         "power": "48 HP",
@@ -10,7 +9,6 @@
         "img": "https://i.ibb.co/PhSKtN1/volvo-excavator-ccexpress.png"
     },
     {
-        "id": 2,
         "name": "Caterpillar 205",
         "brand": "Caterpillar",
         "power": "71 HP",
@@ -20,7 +18,6 @@
         "img": "https://i.ibb.co/YZfSLzD/cat-excavator.png"
     },
     {
-        "id": 3,
         "name": "Caterpillar Dozers D5",
         "brand": "Caterpillar",
         "power": "170 HP",
@@ -30,7 +27,6 @@
         "img": "https://i.ibb.co/W3CmCXC/dozer-d5-ccexpress.png"
     },
     {
-        "id": 4,
         "name": "Mitsubishi BD2F",
         "brand": "Mitsubishi",
         "power": "40 HP",
@@ -40,7 +36,6 @@
         "img": "https://i.ibb.co/KVf53HP/mitsubishi-dozer-ccexpress.png"
     },
     {
-        "id": 5,
         "name": "Komatsu WA200-8",
         "brand": "Komatsu",
         "power": "95.2 HP",
@@ -50,7 +45,6 @@
         "img": "https://i.ibb.co/whzrswV/komatsu-wa200.png"
     },
     {
-        "id": 6,
         "name": "Komatsu WA1200-6",
         "brand": "Komatsu",
         "power": "1411 HP",
@@ -60,7 +54,6 @@
         "img": "https://i.ibb.co/8BgkzWq/komatsu-wa1200-6.png"
     },
     {
-        "id": 7,
         "name": "Komatsu HM300-5",
         "brand": "Komatsu",
         "power": "248 HP",
@@ -70,7 +63,6 @@
         "img": "https://i.ibb.co/tpQ1w5Q/komatsu-hm300-5.png"
     },
     {
-        "id": 8,
         "name": "Komatsu HM400-5",
         "brand": "Komatsu",
         "power": "353 HP",
@@ -80,7 +72,6 @@
         "img": "https://i.ibb.co/6g80NTB/komatsu-hm400-5-ccexpress.png"
     },
     {
-        "id": 9,
         "name": "Caterpillar AP355F Paver",
         "brand": "Caterpillar",
         "power": "74.8 HP",
@@ -90,7 +81,6 @@
         "img": "https://i.ibb.co/S0ZL32k/caterpillar-paver-ccexpress.png"
     },
     {
-        "id": 10,
         "name": "Caterpillar Drills MD6250",
         "brand": "Caterpillar",
         "power": "826 HP",
@@ -100,7 +90,6 @@
         "img": "https://i.ibb.co/42Bb3jb/caterpillar-drills-ccexpress.png"
     },
     {
-        "id": 11,
         "name": "Caterpillar CW16 Roller",
         "brand": "Caterpillar",
         "power": "100.5 HP",
@@ -110,7 +99,6 @@
         "img": "https://i.ibb.co/cwyHgsd/caterpillar-roller-ccexpress.png"
     },
     {
-        "id": 12,
         "name": "Caterpillar Draglines 8200",
         "brand": "Caterpillar",
         "power": "450 HP",

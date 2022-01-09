@@ -25,7 +25,7 @@ const Quote = () => {
                                     <Col xs={12} sm={12} md={6}>
                                         <Form.Group
                                             className="mb-3"
-                                            controlId="exampleForm.ControlInput1"
+                                            controlId="formBasicText"
                                         >
                                             <Form.Label className="text-light">
                                                 Your Name
@@ -39,7 +39,7 @@ const Quote = () => {
                                     <Col xs={12} sm={12} md={6}>
                                         <Form.Group
                                             className="mb-3"
-                                            controlId="exampleForm.ControlInput1"
+                                            controlId="formBasicEmail"
                                         >
                                             <Form.Label className="text-light">
                                                 Email address

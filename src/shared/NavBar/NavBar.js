@@ -1,5 +1,12 @@
-import React from "react";
-import { Button, Container, Nav, Navbar } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import {
+    Badge,
+    Button,
+    Container,
+    Nav,
+    Navbar,
+    NavDropdown
+} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,15 +19,24 @@ import useAuth from "../../hooks/useAuth";
 
 const NavBar = () => {
     const logOutIcon = <FontAwesomeIcon icon={faSignOutAlt} />;
-
     const { user, logOut } = useAuth();
+    const [listedItems, setListedItems] = useState([]);
+
+    useEffect(() => {
+        const url = `http://localhost:5000/listed?clientEmail=${user.email}`;
+        fetch(url)
+            .then((res) => res.json())
+            .then((data) => setListedItems(data))
+            .catch((error) => console.log(error.message));
+    }, [listedItems]);
+
     return (
         <Navbar
             collapseOnSelect
             expand="lg"
             bg="light"
             variant="light"
-            className="py-4"
+            className="py-3"
         >
             <Container>
                 <Navbar.Brand>
@@ -51,10 +67,10 @@ const NavBar = () => {
                         {user?.email && (
                             <div style={{ display: "flex" }}>
                                 <div
-                                    className="ps-3"
                                     style={{
                                         display: "flex",
-                                        alignItems: "center"
+                                        alignItems: "center",
+                                        marginLeft: "15px"
                                     }}
                                 >
                                     <img
@@ -73,13 +89,42 @@ const NavBar = () => {
                             </div>
                         )}
                         {user?.email ? (
-                            <Button
-                                variant="warning"
-                                className="text-white text-center fw-bold"
-                                onClick={() => logOut()}
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center"
+                                }}
                             >
-                                Logout {logOutIcon}
-                            </Button>
+                                <NavDropdown
+                                    title="Dashboard"
+                                    id="collasible-nav-dropdown"
+                                    className="link"
+                                >
+                                    <NavDropdown.Item to="/listed">
+                                        <NavLink to="/listed">
+                                            <Button
+                                                variant="white"
+                                                className="fw-bold"
+                                            >
+                                                Listed{" "}
+                                                <Badge bg="secondary">
+                                                    {listedItems.length}
+                                                </Badge>
+                                            </Button>
+                                        </NavLink>
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.2">
+                                        Another action
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                                <Button
+                                    variant="warning"
+                                    className="text-white fw-bold py-2"
+                                    onClick={() => logOut()}
+                                >
+                                    Logout {logOutIcon}
+                                </Button>
+                            </div>
                         ) : (
                             <NavLink className="link" to="/login">
                                 Login
