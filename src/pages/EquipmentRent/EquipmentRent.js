@@ -20,7 +20,7 @@ const EquipmentRent = () => {
         };
         console.log(clientDetail);
 
-        // Send to Cart in Server
+        // Add to listed Item in Server
         fetch("http://localhost:5000/listed", {
             method: "POST",
             headers: {
@@ -31,6 +31,7 @@ const EquipmentRent = () => {
             .then((res) => res.json())
             .then((data) => {
                 if (data.result.insertedId) {
+                    alert("Equipment Added to List");
                 }
             });
     };
@@ -51,6 +52,7 @@ const EquipmentRent = () => {
                             <Row>
                                 {equipments.map((equipment) => (
                                     <SingleEquipment
+                                        key={equipment._id}
                                         equipment={equipment}
                                         detectEquipmentId={detectEquipmentId}
                                     ></SingleEquipment>

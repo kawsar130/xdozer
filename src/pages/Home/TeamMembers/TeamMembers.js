@@ -30,7 +30,10 @@ const TeamMembers = () => {
                             <Container>
                                 <Row className="gx-1">
                                     {members.map((mem) => (
-                                        <Member mem={mem}></Member>
+                                        <Member
+                                            key={mem.name}
+                                            mem={mem}
+                                        ></Member>
                                     ))}
                                 </Row>
                             </Container>
