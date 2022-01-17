@@ -12,6 +12,9 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./Login.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+
 const Login = () => {
     const [loginData, setLoginData] = useState({});
     const { user, loginUser, signInWithGoogle, isLoading, authError, logOut } =
@@ -19,6 +22,8 @@ const Login = () => {
 
     const location = useLocation();
     const navigate = useNavigate();
+
+    const GoogleIcon = <FontAwesomeIcon icon={faGoogle} />;
 
     const handleOnChange = (e) => {
         const field = e.target.name;
@@ -38,7 +43,7 @@ const Login = () => {
 
     return (
         <Container>
-            <div className="py-5">
+            <div className="py-4 login-page-container">
                 <Row className="login-container g-5">
                     <Col xs={12} sm={12} md={6} lg={6} xl={6}>
                         {user?.email ? (
@@ -66,8 +71,8 @@ const Login = () => {
                                 </Button>
                             </div>
                         ) : (
-                            <div>
-                                <h1>Login</h1>
+                            <div className="p-5 login-form-container">
+                                <h3 className="mb-3">Welcome</h3>
                                 <Form onSubmit={handleLoginSubmit}>
                                     <Form.Group
                                         className="mb-3"
@@ -82,7 +87,7 @@ const Login = () => {
                                     </Form.Group>
 
                                     <Form.Group
-                                        className="mb-3"
+                                        className="mb-1"
                                         controlId="formBasicPassword"
                                     >
                                         <Form.Control
@@ -93,45 +98,59 @@ const Login = () => {
                                         />
                                     </Form.Group>
 
-                                    <Button
-                                        variant="warning"
-                                        type="submit"
-                                        className="w-25"
-                                    >
-                                        Login
-                                    </Button>
                                     <NavLink
                                         to="/register"
                                         style={{
                                             display: "block",
                                             textDecoration: "none",
-                                            paddingTop: "10px"
+                                            padding: "5px 0",
+                                            color: "slateGray"
                                         }}
                                     >
-                                        New User? Please Register!
+                                        New User? Click Me to Register!
                                     </NavLink>
-                                    {isLoading && (
-                                        <Spinner animation="border" />
+
+                                    {!isLoading ? (
+                                        <Button
+                                            variant="warning"
+                                            type="submit"
+                                            className="px-5 text-black-50 fw-bold"
+                                        >
+                                            Login
+                                        </Button>
+                                    ) : (
+                                        <Spinner
+                                            className="mx-3"
+                                            animation="border"
+                                        />
                                     )}
+
                                     {user?.email && (
-                                        <Alert variant="success">
+                                        <Alert
+                                            className="mt-3"
+                                            variant="success"
+                                        >
                                             Login Success!
                                         </Alert>
                                     )}
                                     {authError && (
-                                        <Alert variant="warning">
+                                        <Alert
+                                            variant="warning"
+                                            className="mt-3"
+                                        >
                                             Login Failed! Error: {authError}
                                         </Alert>
                                     )}
                                 </Form>
                                 {!isLoading && (
-                                    <div className="bg-light py-4">
-                                        <h5>Your can Sign in With Google</h5>
+                                    <div className="mt-4">
+                                        <h5>Sign In with</h5>
                                         <Button
                                             onClick={handleGoogleSignIn}
                                             variant="warning"
+                                            className="text-black-50 fw-bold"
                                         >
-                                            Google Sign-In
+                                            {GoogleIcon}
                                         </Button>
                                     </div>
                                 )}

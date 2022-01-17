@@ -39,7 +39,6 @@ const SingleListedItem = ({ listed, handleRemove }) => {
                         </div>
                     </Col>
                     <Col
-                        Col
                         xs={12}
                         sm={12}
                         md={3}

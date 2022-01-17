@@ -36,7 +36,7 @@ const Register = () => {
 
     return (
         <Container>
-            <div className="py-5">
+            <div className="py-4">
                 <Row className="login-container g-5">
                     <Col xs={12} sm={12} md={6} lg={6} xl={6}>
                         {user?.email ? (
@@ -59,8 +59,8 @@ const Register = () => {
                                 <p className="fs-4">Thank You</p>
                             </div>
                         ) : (
-                            <div>
-                                <h1>Register</h1>
+                            <div className="login-form-container p-5">
+                                <h3 className="mb-3">Register</h3>
                                 <Form onSubmit={handleRegSubmit}>
                                     <Form.Group
                                         className="mb-3"
@@ -108,33 +108,42 @@ const Register = () => {
                                         />
                                     </Form.Group>
 
-                                    <Button
-                                        variant="warning"
-                                        type="submit"
-                                        className="w-25"
-                                    >
-                                        Register
-                                    </Button>
+                                    {!isLoading ? (
+                                        <Button
+                                            variant="warning"
+                                            type="submit"
+                                            className="px-4 text-black-50 fw-bold"
+                                        >
+                                            Register
+                                        </Button>
+                                    ) : (
+                                        <Spinner animation="border" />
+                                    )}
                                     <NavLink
                                         to="/login"
                                         style={{
                                             display: "block",
                                             textDecoration: "none",
-                                            paddingTop: "10px"
+                                            paddingTop: "10px",
+                                            color: "slateGray"
                                         }}
                                     >
-                                        Already Have an Account? Please Login!
+                                        Already User? Click Me!
                                     </NavLink>
-                                    {isLoading && (
-                                        <Spinner animation="border" />
-                                    )}
+
                                     {user?.email && (
-                                        <Alert variant="success">
+                                        <Alert
+                                            className="mt-3"
+                                            variant="success"
+                                        >
                                             Registration Success!
                                         </Alert>
                                     )}
                                     {authError && (
-                                        <Alert variant="warning">
+                                        <Alert
+                                            className="mt-3"
+                                            variant="warning"
+                                        >
                                             Registration Failed! Error:{" "}
                                             {authError}
                                         </Alert>

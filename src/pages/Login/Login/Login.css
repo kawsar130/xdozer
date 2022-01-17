@@ -1,3 +1,10 @@
 .login-container {
     padding: 5vw 0;
 }
+
+.login-form-container {
+    background-color: #eee;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 1px 1px 3px rgba(97, 97, 97, 0.4);
+}

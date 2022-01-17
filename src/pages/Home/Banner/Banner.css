@@ -53,3 +53,12 @@
     color: #fff;
     text-decoration: none;
 }
+
+@media (max-width: 550px) {
+    .banner-text {
+        margin: 10px;
+    }
+    .main-heading-text {
+        font-size: 2em;
+    }
+}

@@ -12,6 +12,7 @@ import Register from "./pages/Login/Register/Register";
 import EquipmentRent from "./pages/EquipmentRent/EquipmentRent";
 import EquipmentDetail from "./pages/EquipmentDetail/EquipmentDetail";
 import Listed from "./pages/Dashboard/Listed/Listed";
+import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
 
 function App() {
     return (
@@ -24,7 +25,14 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/equipmentRent" element={<EquipmentRent />} />
-                    <Route path="/listed" element={<Listed />} />
+                    <Route
+                        path="/listed"
+                        element={
+                            <PrivateRoute>
+                                <Listed />
+                            </PrivateRoute>
+                        }
+                    />
                     <Route
                         path={`/equipmentRent/:id`}
                         element={<EquipmentDetail />}

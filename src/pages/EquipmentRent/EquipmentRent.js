@@ -14,6 +14,10 @@ const EquipmentRent = () => {
     }, []);
 
     const detectEquipmentId = (_id) => {
+        if (!user.email) {
+            window.location.href = "/login";
+        }
+
         const clientDetail = {
             clientEmail: user.email,
             equipmentId: _id

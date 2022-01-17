@@ -4,7 +4,7 @@ import useAuth from "../../../hooks/useAuth";
 import SingleListedItem from "../SingleListedItem/SingleListedItem";
 
 const Listed = () => {
-    const { user } = useAuth();
+    const { user, isLoading } = useAuth();
     const [listedItems, setListedItems] = useState([]);
     const [removeState, setRemoveState] = useState(false);
 
@@ -12,9 +12,19 @@ const Listed = () => {
         const url = `http://localhost:5000/listed?email=${user.email}`;
         fetch(url)
             .then((res) => res.json())
-            .then((data) => setListedItems(data))
+            .then((data) => {
+                setListedItems(data);
+            })
             .catch((error) => console.log(error.message));
     }, [removeState]);
+
+    if (isLoading) {
+        return (
+            <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>
+        );
+    }
 
     const handleRemove = (id) => {
         fetch(`http://localhost:5000/removeItem/${id}`, {
@@ -30,12 +40,22 @@ const Listed = () => {
             .catch((err) => console.error(err));
     };
 
+    const submitData = {
+        clientName: user.displayName,
+        clientEmail: user.email,
+        equipmentData: listedItems
+    };
+
+    const handleSubmitQuotation = () => {
+        console.log(submitData);
+    };
+
     return (
         <div className="my-5">
             <h3>Your list for Quotation</h3>
             <Container>
                 <div>
-                    {!listedItems.length ? (
+                    {!listedItems.length && !user.email ? (
                         <div style={{ height: "50vh" }}>
                             <h4>Loading...</h4>
                             <Spinner animation="border" />
@@ -57,7 +77,12 @@ const Listed = () => {
                     )}
                 </div>
             </Container>
-            <Button variant="warning" size="lg" className="mt-5">
+            <Button
+                variant="warning"
+                size="lg"
+                className="mt-5"
+                onClick={() => handleSubmitQuotation()}
+            >
                 Submit For Quotation
             </Button>
         </div>
