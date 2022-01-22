@@ -9,35 +9,41 @@ const ProjectGallery = () => {
     let data = [
         {
             id: 1,
-            imgSrc: "https://i.ibb.co/d5M8k1t/1.jpg"
+            imgSrc: "https://i.ibb.co/SRFGT71/photo-1.jpg"
         },
         {
             id: 2,
-            imgSrc: "https://i.ibb.co/yyMf1LF/2.jpg"
+            imgSrc: "https://i.ibb.co/fNmqLB0/photo-2.jpg"
         },
         {
             id: 3,
-            imgSrc: "https://i.ibb.co/vY91g5G/3.jpg"
+            imgSrc: "https://i.ibb.co/G77JWnF/photo-3.jpg"
         },
         {
             id: 4,
-            imgSrc: "https://i.ibb.co/23gbWGr/4.jpg"
+            imgSrc: "https://i.ibb.co/JBKgjhR/photo-4.jpg"
         },
+
         {
             id: 5,
-            imgSrc: "https://i.ibb.co/t2KR1jt/5.jpg"
+            imgSrc: "https://i.ibb.co/hYvjGgX/photo-5.jpg"
         },
+
         {
             id: 6,
-            imgSrc: "https://i.ibb.co/ZTX2Bsk/6.jpg"
+            imgSrc: "https://i.ibb.co/qjtpj7f/photo-6.jpg"
         },
         {
             id: 7,
-            imgSrc: "https://i.ibb.co/5LxpGhw/7.jpg"
+            imgSrc: "https://i.ibb.co/bvyrPF5/photo-7.jpg"
         },
         {
             id: 8,
-            imgSrc: "https://i.ibb.co/J29dPCy/8.jpg"
+            imgSrc: "https://i.ibb.co/KwxTJDC/photo-8.jpg"
+        },
+        {
+            id: 9,
+            imgSrc: "https://i.ibb.co/tzj36Y5/photo-9.jpg"
         }
     ];
 

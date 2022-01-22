@@ -1,3 +1,17 @@
+.navbar {
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(226, 240, 254, 1) 0%,
+        rgb(252, 247, 236) 90%
+    );
+
+    /* background-image: radial-gradient(
+        circle 343px at 46.3% 47.5%,
+        rgba(242, 242, 242, 1) 0%,
+        rgba(241, 241, 241, 1) 72.9%
+    ); */
+}
+
 .link {
     color: gray;
     text-decoration: none;

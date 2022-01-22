@@ -8,7 +8,7 @@ const EquipmentDetail = () => {
     const [equipment, setEquipment] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/equipmentRent/${id}`)
+        fetch(`https://serene-waters-90111.herokuapp.com/equipmentRent/${id}`)
             .then((res) => res.json())
             .then((data) => setEquipment(data))
             .catch((err) => console.log(err));

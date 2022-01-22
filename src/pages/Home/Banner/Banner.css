@@ -1,13 +1,7 @@
 .banner-container {
-    background-image: url("https://i.ibb.co/T85QmKN/banner-png.png");
-    background-color: #eeeeee;
-    background-color: linear-gradient(
-        153deg,
-        rgba(40, 38, 68, 1) 0%,
-        rgba(187, 187, 187, 0.5494572829131652) 0%,
-        rgba(45, 41, 46, 0.5466561624649859) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
+    background-image: url("https://i.ibb.co/T85QmKN/banner-png.png"),
+        url("https://i.ibb.co/vcbW9z8/banner-layer.png");
+
     height: 80vh;
     background-repeat: no-repeat;
     background-position: top;
@@ -24,7 +18,7 @@
 }
 
 .main-heading-text {
-    font-size: 4em;
+    font-size: 5em;
 }
 
 .btn-grad {
@@ -43,8 +37,8 @@
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-
-    border-radius: 10px;
+    border-radius: 5px;
+    border: none;
     display: block;
 }
 
@@ -54,11 +48,38 @@
     text-decoration: none;
 }
 
-@media (max-width: 550px) {
+/* xs */
+@media only screen and (max-width: 575px) {
     .banner-text {
-        margin: 10px;
+        margin: auto;
     }
     .main-heading-text {
         font-size: 2em;
+    }
+}
+
+/* sm  */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .main-heading-text {
+        font-size: 2.5em;
+    }
+}
+
+/* md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-heading-text {
+        font-size: 3em;
+    }
+}
+
+/* lg  */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .main-heading-text {
+        font-size: 3.5em;
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+    .main-heading-text {
+        font-size: 4em;
     }
 }

@@ -23,7 +23,7 @@ const NavBar = () => {
     const [listedItems, setListedItems] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/listed?clientEmail=${user.email}`;
+        const url = `https://serene-waters-90111.herokuapp.com/listed?clientEmail=${user.email}`;
         fetch(url)
             .then((res) => res.json())
             .then((data) => setListedItems(data))
@@ -34,9 +34,8 @@ const NavBar = () => {
         <Navbar
             collapseOnSelect
             expand="lg"
-            bg="light"
             variant="light"
-            className="py-3"
+            className="py-3 navbar"
         >
             <Container>
                 <Navbar.Brand>

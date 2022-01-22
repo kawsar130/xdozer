@@ -8,7 +8,7 @@ const EquipmentRent = () => {
     const [equipments, setEquipments] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/equipmentRent")
+        fetch("https://serene-waters-90111.herokuapp.com/equipmentRent")
             .then((res) => res.json())
             .then((data) => setEquipments(data));
     }, []);
@@ -25,7 +25,7 @@ const EquipmentRent = () => {
         console.log(clientDetail);
 
         // Add to listed Item in Server
-        fetch("http://localhost:5000/listed", {
+        fetch("https://serene-waters-90111.herokuapp.com/listed", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

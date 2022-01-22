@@ -6,7 +6,7 @@ const SingleListedItem = ({ listed, handleRemove }) => {
     const [listedEquipment, setListedEquipment] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/equipmentSearch?equipmentId=${equipmentId}`;
+        const url = `https://serene-waters-90111.herokuapp.com/equipmentSearch?equipmentId=${equipmentId}`;
         fetch(url)
             .then((res) => res.json())
             .then((data) => setListedEquipment(data))

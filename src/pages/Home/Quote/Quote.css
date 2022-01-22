@@ -1,9 +1,13 @@
 .quote-container {
     background-image: radial-gradient(
-        circle 610px at 5.2% 51.6%,
-        rgba(5, 8, 114, 1) 0%,
-        rgba(7, 3, 53, 1) 97.5%
-    );
+            circle 610px at 5.2% 51.6%,
+            rgba(5, 8, 114, 0.1) 0%,
+            rgba(7, 3, 53, 0.5) 97.5%
+        ),
+        url("https://i.ibb.co/PxnNTyJ/quote.png");
+
+    background-size: cover;
+    background-position: center center;
 }
 
 .form-container {

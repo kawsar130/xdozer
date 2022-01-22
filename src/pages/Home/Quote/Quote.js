@@ -5,7 +5,7 @@ import "./Quote.css";
 const Quote = () => {
     return (
         <div className="quote-container">
-            <Row>
+            <Row className="me-0">
                 <Col xs={12} sm={12} md={12} lg={6} xl={5}>
                     <img
                         width="100%"

@@ -14,7 +14,7 @@ const Listed = () => {
     const [validated, setValidated] = useState(false);
 
     useEffect(() => {
-        const url = `http://localhost:5000/listed?email=${user.email}`;
+        const url = `https://serene-waters-90111.herokuapp.com/listed?email=${user.email}`;
         fetch(url)
             .then((res) => res.json())
             .then((data) => {
@@ -32,7 +32,7 @@ const Listed = () => {
     }
 
     const handleRemove = (id) => {
-        fetch(`http://localhost:5000/removeItem/${id}`, {
+        fetch(`https://serene-waters-90111.herokuapp.com/removeItem/${id}`, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" }
         })

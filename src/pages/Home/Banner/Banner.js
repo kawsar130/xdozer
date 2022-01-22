@@ -6,10 +6,12 @@ const Banner = () => {
     return (
         <div className="banner-container">
             <div className="banner-text">
-                <h4>We Are Providing Everything You Need!</h4>
                 <h1 className="main-heading-text fw-bold">
-                    Lets Build Together
+                    LET'S <br /> BUILD
+                    <br />
+                    TOGETHER
                 </h1>
+                <h4>We Are Providing Everything You Need!</h4>
                 <Button
                     className="mt-3 text-white fw-bold btn-grad mx-auto"
                     variant="light"
