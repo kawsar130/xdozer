@@ -1,8 +1,8 @@
 .navbar {
     background-image: radial-gradient(
         circle farthest-corner at 10% 20%,
-        rgba(226, 240, 254, 1) 0%,
-        rgb(252, 247, 236) 90%
+        rgb(239, 246, 253) 0%,
+        rgb(252, 248, 241) 90%
     );
 
     /* background-image: radial-gradient(
