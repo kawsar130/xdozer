@@ -4,8 +4,8 @@ XDozer is a heavy equipment rental website where customer can check equipments t
 
 Website Feature:  
 • Responsive User Interface with beautiful Landing Page.  
-• Product Gallary  
-• Interactive Project Photo Gallary  
+• Product Gallery  
+• Interactive Project Photo Gallery  
 • Google and Email Login  
 
 Live Preview: https://xdozer-7bffb.web.app  
